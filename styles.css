@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: black;
+  background-color: transparent;
   font-family: 'Houstiq', sans-serif;
   overflow-x: hidden;
 }
@@ -39,8 +39,8 @@ body {
   left: 60px;
   right: 60px;
   text-align: center;
-  color: white;
-  font-size: 2.4rem;
+  color: #e0e0e0;
+  font-size: 2.2rem;
   font-family: 'Houstiq', serif;
   text-transform: uppercase;
 }
