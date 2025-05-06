@@ -63,7 +63,7 @@ body {
 
 .scroll-track img {
   height: auto;
-  width: 1580px; /* 50% da largura original para preservar qualidade e repetição fluída */
+  width: 150px; /* 50% da largura original para preservar qualidade e repetição fluída */
 }
 
 @keyframes scrollLeft {
