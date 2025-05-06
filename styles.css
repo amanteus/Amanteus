@@ -112,7 +112,7 @@ body {
 
 /* Botão SALA SECRETA */
 .btn.center {
-  max-width: 430px;
+  max-width: 350px;
   animation: pulse 2s infinite;
   margin: 0 auto;
   display: block;
@@ -122,7 +122,7 @@ body {
 /* Botões à esquerda (X e INSTA) */
 .btn.left {
   position: absolute;
-  left: calc(50% - 250px);
+  left: calc(50% - 180px);
   top: 260px;
   max-width: 200px;
   display: block;
@@ -133,8 +133,8 @@ body {
 .btn.left.insta {
   top: 475px; /* distância abaixo do X */
   position: absolute;
-  left: calc(50% - 250px);
-  max-width: 250px;
+  left: calc(50% - 200px);
+  max-width: 200px;
   z-index: 10;
 }
 
@@ -143,8 +143,8 @@ body {
 .btn.right {
   position: absolute;
   top: 260px;
-  right: calc(50% - 250px); /* alinhado com borda direita de SALA SECRETA */
-  max-width: 260px;
+  right: calc(50% - 200px); /* alinhado com borda direita de SALA SECRETA */
+  max-width: 200px;
 }
 
 .cta {
@@ -156,7 +156,7 @@ body {
   font-size: 1rem;
   font-family: 'Houstiq', sans-serif;
   line-height: 1.5;
-  margin-top: 450px;
+  margin-top: 150px;
 }
 
 .cta-btn {
