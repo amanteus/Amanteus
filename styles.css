@@ -124,8 +124,6 @@ body {
 /* Botões à esquerda (X e INSTA) */
 .btn.left {
   position: relative;
-  left: calc(50% - 200px);
-  top: 260px;
   max-width: 200px;
   display: block;
   z-index: 10;
@@ -135,8 +133,6 @@ body {
 .btn.left.insta {
   top: 475px; /* distância abaixo do X */
   position: relative;
-  left: calc(50% - 200px);
-  max-width: 200px;
   z-index: 10;
 }
 
@@ -145,8 +141,6 @@ body {
 .btn.right {
   position: relative;
   top: 260px;
-  right: calc(50% - 200px); /* alinhado com borda direita de SALA SECRETA */
-  max-width: 200px;
 }
 
 .cta {
