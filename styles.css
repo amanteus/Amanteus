@@ -134,7 +134,7 @@ body {
 
 /* INSTA abaixo do X */
 .btn.left.insta {
-  top: 475px; /* distância abaixo do X */
+  top: 0; /* distância abaixo do X */
   position: relative;
   z-index: 10;
 }
@@ -145,7 +145,6 @@ body {
   position: absolute;
   right: 0;
   top: 0;
-  top: 260px;
 }
 
 .cta {
