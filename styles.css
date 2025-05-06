@@ -40,7 +40,7 @@ body {
   right: 60px;
   text-align: center;
   color: #e0e0e0;
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   font-family: 'Houstiq', serif;
   text-transform: uppercase;
 }
@@ -112,7 +112,7 @@ body {
 
 /* Botão SALA SECRETA */
 .btn.center {
-  max-width: 500px;
+  max-width: 430px;
   animation: pulse 2s infinite;
   margin: 0 auto;
   display: block;
@@ -124,7 +124,7 @@ body {
   position: absolute;
   left: calc(50% - 250px);
   top: 260px;
-  max-width: 250px;
+  max-width: 200px;
   display: block;
   z-index: 10;
 }
