@@ -4,12 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Amanteus</title>
-  <link rel="icon" type="image/png" href="{{ url_for('static', filename='img/Fundo Verde-11.png') }}">
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
+  <link rel="icon" type="image/png" href="Fundo Verde-11.png">
+  <link rel="stylesheet" href="amanteus/styles.css" />
   <style>
     @font-face {
       font-family: 'Houstiq';
-      src: url("{{ url_for('static', filename='fonts/Houstiq.ttf') }}") format('truetype');
+      src: url("Houstiq.ttf") format('truetype');
     }
   </style>
 </head>
@@ -17,69 +17,63 @@
 
   <!-- Logo Reduzido -->
   <div class="logo-container">
-    <img src="{{ url_for('static', filename='img/Branco-15.png') }}" alt="Logo Amanteus">
+    <img src="Branco-15.png" alt="Logo Amanteus">
   </div>
 
   <!-- Primeira Seção -->
   <section class="first-section">
-    <img class="background-img" src="{{ url_for('static', filename='img/back 1.png') }}" alt="Fundo 1">
+    <img class="background-img" src="back 1.png" alt="Fundo 1">
     <div class="headline">DESPERTE O HOMEM QUE ELA NÃO PODE IGNORAR</div>
   </section>
 
   <!-- Barra Rolante Infinita -->
   <div class="scroll-bar">
     <div class="scroll-track">
-      <img src="{{ url_for('static', filename='img/segunda.png') }}" alt="Divisória Rolante" />
-      <img src="{{ url_for('static', filename='img/segunda.png') }}" alt="Divisória Rolante Duplicada" />
+      <img src="segunda.png" alt="Divisória Rolante" />
+      <img src="segunda.png" alt="Divisória Rolante Duplicada" />
     </div>
   </div>
 
   <!-- Segunda Seção -->
   <section class="second-section">
-    <img class="overlay-bg" src="{{ url_for('static', filename='img/back 2.png') }}" alt="Fundo 2" />
+    <img class="overlay-bg" src="back 2.png" alt="Fundo 2" />
 
     <div class="buttons-container"> 
         <a href="https://t.me/salasecretaamanteus" target="_blank">
-          <img class="btn center" src="{{ url_for('static', filename='img/SALA SECRETA.png') }}" alt="SALA SECRETA" />
+          <img class="btn center" src="SALA SECRETA.png" alt="SALA SECRETA" />
         </a>
       
         <div class="btn-group">
             <a href="https://x.com/amanteusbr" target="_blank">
-              <img class="btn left" src="{{ url_for('static', filename='img/X.png') }}" alt="X" />
+              <img class="btn left" src="X.png" alt="X" />
             </a>
             <a href="https://www.instagram.com/amanteusbr/" target="_blank">
-              <img class="btn left insta" src="{{ url_for('static', filename='img/INSTA.png') }}" alt="INSTA" />
+              <img class="btn left insta" src="INSTA.png" alt="INSTA" />
             </a>
           </div>
-          
       
         <a href="https://forms.gle/KdK1FEVhiHXniZpP7" target="_blank">
-          <img class="btn right" src="{{ url_for('static', filename='img/PRIMORDIAL.png') }}" alt="PRIMORDIAL" />
+          <img class="btn right" src="PRIMORDIAL.png" alt="PRIMORDIAL" />
         </a>
-      </div>
-      
-      
+    </div>
 
     <div class="cta">
-        <div class="cta">
-            <p>
-              Homens comuns buscam atalhos.<br>
-              Você está aqui porque sente que nasceu para mais.<br>
-              E talvez... você esteja certo.
-            </p>
-            <a href="https://forms.gle/KdK1FEVhiHXniZpP7" target="_blank">
-              <img src="{{ url_for('static', filename='img/DESBLOQUEAR O CÓDIGO.png') }}" alt="Desbloquear" class="cta-btn" />
-            </a>
-          </div>
-          
-      </div>
+      <p>
+        Homens comuns buscam atalhos.<br>
+        Você está aqui porque sente que nasceu para mais.<br>
+        E talvez... você esteja certo.
+      </p>
+      <a href="https://forms.gle/KdK1FEVhiHXniZpP7" target="_blank">
+        <img src="DESBLOQUEAR O CÓDIGO.png" alt="Desbloquear" class="cta-btn" />
+      </a>
+    </div>
       
-      <footer class="footer">
-        <div class="footer-logo">
-          <img src="{{ url_for('static', filename='img/Branco-11.png') }}" alt="Logo Amanteus" class="footer-logo" />
-        </div>
-        <p>© 2025 Amanteus. Todos os direitos reservados.</p>
-      </footer>
+    <footer class="footer">
+      <div class="footer-logo">
+        <img src="Branco-11.png" alt="Logo Amanteus" class="footer-logo" />
+      </div>
+      <p>© 2025 Amanteus. Todos os direitos reservados.</p>
+    </footer>
 
   </section>
 </body>
