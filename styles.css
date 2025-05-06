@@ -115,7 +115,6 @@ body {
 .btn.center {
   max-width: 350px;
   animation: pulse 2s infinite;
-  margin: 0 auto;
   display: block;
   margin-top: 40px;
   margin-left: 20px;
@@ -125,9 +124,9 @@ body {
 /* Botões à esquerda (X e INSTA) */
 .btn.left {
   position: absolute;
-  left: calc(50% - 180px);
+  left: calc(50% - 200px);
   top: 260px;
-  max-width: 200px;
+  max-width: 260px;
   display: block;
   z-index: 10;
 }
@@ -137,7 +136,7 @@ body {
   top: 475px; /* distância abaixo do X */
   position: absolute;
   left: calc(50% - 200px);
-  max-width: 200px;
+  max-width: 260px;
   z-index: 10;
 }
 
