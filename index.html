@@ -1,68 +1,71 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Amanteus</title>
-  <link rel="icon" type="image/png" href="{{ url_for('static', filename='/Fundo Verde-11.png') }}">
-  <link rel="stylesheet" href="{{ url_for('static', filename='links/styles.css') }}" />
+  <link rel="icon" type="image/png" href="Fundo Verde-11.png">
+  <link rel="stylesheet" href="amanteus/styles.css" />
+  <link rel="stylesheet" href="styles.css" />
   <style>
     @font-face {
       font-family: 'Houstiq';
-      src: url("{{ url_for('static', filename='fonts/Houstiq.ttf') }}") format('truetype');
+      src: url("Houstiq.ttf") format('truetype');
     }
   </style>
 </head>
+
 <body>
+  <!-- LOGO SUPERIOR -->
+  <header class="logo-container">
+    <img src="Branco-15.png" alt="Logo Amanteus">
+  </header>
 
-  <!-- Seção 1: Headline + Imagem de Fundo -->
-  <section class="first-section">
-    <div class="logo-container">
-      <img src="{{ url_for('static', filename='img/Branco-15.png') }}" alt="Logo Amanteus">
-    </div>
-    <img class="background-img" src="{{ url_for('static', filename='img/back 1.png') }}" alt="Fundo 1">
-    <div class="headline">DESPERTE O HOMEM QUE ELA NÃO PODE IGNORAR</div>
-  </section>
-
-  <!-- Seção 2: Barra Rolante Infinita -->
-  <section class="scrolling-section">
-    <div class="scroll-bar">
-      <div class="scroll-track">
-        <img src="{{ url_for('static', filename='img/segunda.png') }}" alt="Divisória Rolante" />
-        <img src="{{ url_for('static', filename='img/segunda.png') }}" alt="Divisória Rolante Duplicada" />
-      </div>
+  <!-- SEÇÃO 1 - HEADLINE COM FUNDO -->
+  <section id="secao-1" class="first-section">
+    <img class="background-img" src="back 1.png" alt="Fundo 1">
+    <div class="headline">
+      DESPERTE O HOMEM QUE ELA NÃO PODE IGNORAR
     </div>
   </section>
 
-  <!-- Seção 3: Botões, Texto, CTA e Footer -->
-  <section class="third-section">
+  <!-- SCROLL DIVISÓRIO -->
+  <div class="scroll-bar">
+    <div class="scroll-track">
+      <img src="segunda.png" alt="Divisória Rolante" />
+      <img src="segunda.png" alt="Divisória Rolante Duplicada" />
+    </div>
+  </div>
 
-    <!-- Botões -->
-    <div class="buttons-layout">
-      <div class="top-button">
-        <a href="https://t.me/salasecretaamanteus" target="_blank">
-          <img src="{{ url_for('static', filename='img/SALA SECRETA.png') }}" alt="SALA SECRETA" />
+  <!-- SEÇÃO 2 - CHAMADAS E LINKS -->
+  <section id="secao-2" class="second-section">
+    <img class="overlay-bg" src="back 2.png" alt="Fundo 2" />
+
+    <!-- BOTÕES CENTRAIS -->
+    <div class="buttons-container">
+
+      <!-- Sala Secreta -->
+      <a href="https://t.me/salasecretaamanteus" target="_blank">
+        <img class="btn center" src="SALA SECRETA.png" alt="SALA SECRETA" />
+      </a>
+
+      <!-- Botões Sociais -->
+      <div class="btn-group">
+        <a href="https://x.com/amanteusbr" target="_blank">
+          <img class="btn left" src="X.png" alt="X" />
+        </a>
+        <a href="https://www.instagram.com/amanteusbr/" target="_blank">
+          <img class="btn left insta" src="INSTA.png" alt="INSTA" />
         </a>
       </div>
 
-      <div class="bottom-row">
-        <div class="btn-left">
-          <a href="https://forms.gle/KdK1FEVhiHXniZpP7" target="_blank">
-            <img src="{{ url_for('static', filename='img/PRIMORDIAL.png') }}" alt="PRIMORDIAL" />
-          </a>
-        </div>
-        <div class="btn-right">
-          <a href="https://x.com/amanteusbr" target="_blank">
-            <img src="{{ url_for('static', filename='img/X.png') }}" alt="X" />
-          </a>
-          <a href="https://www.instagram.com/amanteusbr/" target="_blank">
-            <img src="{{ url_for('static', filename='img/INSTA.png') }}" alt="INSTA" />
-          </a>
-        </div>
-      </div>
+      <!-- Link Primordial -->
+      <a href="https://forms.gle/KdK1FEVhiHXniZpP7" target="_blank">
+        <img class="btn right" src="PRIMORDIAL.png" alt="PRIMORDIAL" />
+      </a>
     </div>
 
-    <!-- Texto + CTA -->
+    <!-- CTA -->
     <div class="cta">
       <p>
         Homens comuns buscam atalhos.<br>
@@ -70,19 +73,17 @@
         E talvez... você esteja certo.
       </p>
       <a href="https://forms.gle/KdK1FEVhiHXniZpP7" target="_blank">
-        <img src="{{ url_for('static', filename='img/DESBLOQUEAR O CÓDIGO.png') }}" alt="Desbloquear" class="cta-btn" />
+        <img src="DESBLOQUEAR O CÓDIGO.png" alt="Desbloquear" class="cta-btn" />
       </a>
     </div>
 
-    <!-- Footer -->
+    <!-- RODAPÉ -->
     <footer class="footer">
       <div class="footer-logo">
-        <img src="{{ url_for('static', filename='img/Branco-11.png') }}" alt="Logo Amanteus" />
+        <img src="Branco-11.png" alt="Logo Amanteus" />
       </div>
       <p>© 2025 Amanteus. Todos os direitos reservados.</p>
     </footer>
-
   </section>
-
 </body>
 </html>
