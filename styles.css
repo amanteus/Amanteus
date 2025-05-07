@@ -103,48 +103,11 @@ body {
   }
 }
 
-/* Hover geral para os botões */
-.buttons-container img:hover {
-  transform: scale(1.08);
-  filter: brightness(1.2);
-  transition: 0.3s ease-in-out;
-}
-
-/* Botão SALA SECRETA */
-.btn.center {
-  max-width: 430px;
-  animation: pulse 2s infinite;
-  margin: 0 auto;
-  display: block;
-  margin-top: 40px;
-}
-
-/* Botões à esquerda (X e INSTA) */
-.btn.left {
-  position: absolute;
-  left: calc(50% - 250px);
-  top: 260px;
-  max-width: 200px;
-  display: block;
-  z-index: 10;
-}
-
-/* INSTA abaixo do X */
-.btn.left.insta {
-  top: 475px; /* distância abaixo do X */
-  position: absolute;
-  left: calc(50% - 250px);
-  max-width: 250px;
-  z-index: 10;
-}
-
-
-/* PRIMORDIAL alinhado à direita de SALA SECRETA */
-.btn.right {
-  position: absolute;
-  top: 260px;
-  right: calc(50% - 250px); /* alinhado com borda direita de SALA SECRETA */
-  max-width: 260px;
+/* Hover refinado para todos os botões */
+.buttons-layout img:hover {
+  transform: scale(1.06);
+  filter: brightness(1.15);
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
 }
 
 .cta {
@@ -272,9 +235,8 @@ body {
   }
 }
 
-.buttons-container .btn {
-  position: static; /* Remove o absoluto para responsividade */
-  max-width: 100%;
+/* Aplicar regra mais genérica e limpa para responsividade */
+.buttons-layout img {
   width: 100%;
   max-width: 300px;
 }
