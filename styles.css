@@ -10,7 +10,7 @@ body {
 .logo-container {
   position: absolute;
   top: 0px;
-  left: 20px;
+  left: 10px;
   z-index: 10;
 }
 
@@ -40,7 +40,7 @@ body {
   right: 60px;
   text-align: center;
   color: #e0e0e0;
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-family: 'Houstiq', serif;
   text-transform: uppercase;
 }
@@ -72,197 +72,95 @@ body {
 }
 
 /* Segunda seção */
+/* Correção da imagem de fundo da segunda seção */
 .second-section {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background-color: transparent; /* Sem fundo, pois imagem cobre */
-  min-height: 100vh;
   overflow: hidden;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .overlay-bg {
   position: absolute;
-  
+  top: 0;
   left: 0;
   width: 100%;
-  
+  height: 100%;
   object-fit: cover;
   z-index: 0;
 }
 
-/* Animação de pulse */
-@keyframes pulse {
-  0%, 100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  50% {
-    transform: scale(1.05);
-    opacity: 0.9;
-  }
+/* Ajustes na área dos botões */
+.buttons-container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding-top: 80px;
+  padding-bottom: 40px;
 }
 
-/* Hover geral para os botões */
-.buttons-container img:hover {
-  transform: scale(1.08);
-  filter: brightness(1.2);
-  transition: 0.3s ease-in-out;
-}
-
-/* Botão SALA SECRETA */
-.btn.center {
-  max-width: 430px;
-  animation: pulse 2s infinite;
-  margin: 0 auto;
+/* Botões centrais e laterais com responsividade */
+.btn {
+  max-width: 90%;
+  height: auto;
   display: block;
-  margin-top: 40px;
 }
 
-/* Botões à esquerda (X e INSTA) */
-.btn.left {
-  position: absolute;
-  left: calc(50% - 250px);
-  top: 260px;
-  max-width: 200px;
-  display: block;
-  z-index: 10;
-}
-
-/* INSTA abaixo do X */
-.btn.left.insta {
-  top: 475px; /* distância abaixo do X */
-  position: absolute;
-  left: calc(50% - 250px);
-  max-width: 250px;
-  z-index: 10;
-}
-
-
-/* PRIMORDIAL alinhado à direita de SALA SECRETA */
-.btn.right {
-  position: absolute;
-  top: 260px;
-  right: calc(50% - 250px); /* alinhado com borda direita de SALA SECRETA */
-  max-width: 260px;
+.btn-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .cta {
   position: relative;
-  z-index: 12; /* Acima do fundo */
-  text-align: center;
+  z-index: 2;
   color: white;
-  padding: 60px 20px;
-  font-size: 1rem;
+  text-align: center;
   font-family: 'Houstiq', sans-serif;
-  line-height: 1.5;
-  margin-top: 450px;
+  line-height: 1.6;
+  padding: 30px 20px;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-.cta-btn {
-  max-width: 350px;
-  margin-top: 10px;
-  animation: pulse 2s infinite;
-  cursor: pointer;
-  transition: 0.3s ease-in-out;
-}
-
-.cta-btn:hover {
-  transform: scale(1.05);
-  filter: brightness(1.2);
-}
-
+/* Footer responsivo */
 .footer {
   position: relative;
   z-index: 2;
   text-align: center;
-  padding: 40px 20px 20px;
-  background-color: transparent; /* Sem fundo, pois imagem cobre */
-  color: #e0e0e0;
-  font-family: 'Houstiq', sans-serif;
-  font-size: 14px;
-  margin-top: 0px;
+  padding: 20px 10px;
+  font-size: 0.9rem;
+  color: white;
 }
 
-.footer-logo {
-  margin-bottom: 20px;
-  margin-top: 60px;
-}
-
-.footer-logo img {
-  max-width: 120px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-
-/* Correções de layout para a segunda seção */
-.second-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 80px 20px 40px;
-  box-sizing: border-box;
-}
-
-/* Container dos botões centralizado e responsivo */
-.buttons-container {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-  margin-top: 50px;
-  z-index: 10;
-}
-
-.buttons-container .btn {
-  position: static; /* Remove o absoluto para responsividade */
-  max-width: 100%;
-  width: 100%;
-  max-width: 300px;
-}
-
-/* Cta alinhado e adaptável */
-.cta {
-  margin-top: 60px;
-  padding: 0 20px;
-  font-size: 1rem;
-  text-align: center;
-}
-
-.cta p {
-  max-width: 600px;
-  margin: 0 auto 20px;
-}
-
-/* Imagem de fundo corretamente posicionada */
-.overlay-bg {
-  top: 0;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* Responsividade geral */
-@media screen and (max-width: 768px) {
-  .headline {
-    font-size: 1.2rem;
-    left: 20px;
-    right: 20px;
+/* Responsividade para telas maiores */
+@media (min-width: 768px) {
+  .buttons-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
   }
 
-  .buttons-container {
+  .btn-group {
     flex-direction: column;
     gap: 20px;
   }
 
-  .btn {
-    max-width: 100%;
-    width: 100%;
-  }
-
-  .cta-btn {
-    width: 100%;
+  .btn.center {
     max-width: 300px;
   }
+
+  .btn.left,
+  .btn.right,
+  .btn.left.insta {
+    max-width: 220px;
+  }
 }
+
