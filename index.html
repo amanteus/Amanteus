@@ -1,113 +1,84 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Amanteus - O Despertar Começa Aqui. Um portal exclusivo para homens que buscam dominar sua presença, seduzir com propósito e construir masculinidade de verdade." />
+  <meta name="keywords" content="sedução masculina, despertar do homem, masculinidade autêntica, sala secreta, propósito masculino, domínio emocional, Amanteus, Telegram masculino" />
+  <meta name="author" content="Amanteus" />
   <title>Amanteus</title>
-  <link rel="icon" type="image/png" href="{{ url_for('static', filename='img/Fundo Verde-11.png') }}">
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
-  <link rel="icon" type="image/png" href="Fundo Verde-11.png">
-  <link rel="stylesheet" href="amanteus/styles.css" />
-  <style>
-    @font-face {
-      font-family: 'Houstiq';
-      src: url("{{ url_for('static', filename='fonts/Houstiq.ttf') }}") format('truetype');
-      src: url("Houstiq.ttf") format('truetype');
-    }
-  </style>
+
+  <link rel="icon" type="image/png" href="static/img/Fundo Verde-11.png" />
+  <link rel="stylesheet" href="static/css/styles.css" />
 </head>
 <body>
 
-  <!-- Logo Reduzido -->
-  <div class="logo-container">
-    <img src="{{ url_for('static', filename='img/Branco-15.png') }}" alt="Logo Amanteus">
-    <img src="Branco-15.png" alt="Logo Amanteus">
-  </div>
-
-  <!-- Primeira Seção -->
-  <section class="first-section">
-    <img class="background-img" src="{{ url_for('static', filename='img/back 1.png') }}" alt="Fundo 1">
-    <img class="background-img" src="back 1.png" alt="Fundo 1">
-    <div class="headline">DESPERTE O HOMEM QUE ELA NÃO PODE IGNORAR</div>
+  <!-- Seção Hero com background back 1 -->
+  <section class="hero">
+    <div class="background-layer"></div>
+    <img src="static/img/Branco-15.png" alt="Logo Amanteus" class="logo" />
+    <h1 class="headline headline-bottom">
+      O <span class="highlight">DESPERTAR</span> COMEÇA AQUI
+    </h1>    
   </section>
 
-  <!-- Barra Rolante Infinita -->
-  <div class="scroll-bar">
-    <div class="scroll-track">
-      <img src="{{ url_for('static', filename='img/segunda.png') }}" alt="Divisória Rolante" />
-      <img src="{{ url_for('static', filename='img/segunda.png') }}" alt="Divisória Rolante Duplicada" />
-      <img src="segunda.png" alt="Divisória Rolante" />
-      <img src="segunda.png" alt="Divisória Rolante Duplicada" />
+  <!-- Barra Rolante -->
+  <div class="scroll-bar-container">
+    <div class="scroll-bar">
+      <img src="static/img/segunda.png" alt="Barra Rolante" />
+      <img src="static/img/segunda.png" alt="Barra Rolante Duplicada" />
     </div>
   </div>
 
-  <!-- Segunda Seção -->
-  <section class="second-section">
-    <img class="overlay-bg" src="{{ url_for('static', filename='img/back 2.png') }}" alt="Fundo 2" />
-    <img class="overlay-bg" src="back 2.png" alt="Fundo 2" />
-
-    <div class="buttons-container"> 
-        <a href="https://t.me/salasecretaamanteus" target="_blank">
-          <img class="btn center" src="{{ url_for('static', filename='img/SALA SECRETA.png') }}" alt="SALA SECRETA" />
-          <img class="btn center" src="SALA SECRETA.png" alt="SALA SECRETA" />
-        </a>
-
-        <div class="btn-group">
-            <a href="https://x.com/amanteusbr" target="_blank">
-              <img class="btn left" src="{{ url_for('static', filename='img/X.png') }}" alt="X" />
-              <img class="btn left" src="X.png" alt="X" />
-            </a>
-            <a href="https://www.instagram.com/amanteusbr/" target="_blank">
-              <img class="btn left insta" src="{{ url_for('static', filename='img/INSTA.png') }}" alt="INSTA" />
-              <img class="btn left insta" src="INSTA.png" alt="INSTA" />
-            </a>
-          </div>
-          
-
-        <a href="https://forms.gle/KdK1FEVhiHXniZpP7" target="_blank">
-          <img class="btn right" src="{{ url_for('static', filename='img/PRIMORDIAL.png') }}" alt="PRIMORDIAL" />
-          <img class="btn right" src="PRIMORDIAL.png" alt="PRIMORDIAL" />
+  <section class="central-box"> 
+    <div class="central-wrapper">
+      
+      <div class="top-secret">
+        <a href="https://t.me/salasecretaamanteus" target="_blank" rel="noopener noreferrer">
+          <img src="static/img/SALA SECRETA.png" alt="Sala Secreta Amanteus" class="pulse secret-image" />
         </a>
       </div>
-      
-      
-    </div>
-
-    <div class="cta">
-        <div class="cta">
-            <p>
-              Homens comuns buscam atalhos.<br>
-              Você está aqui porque sente que nasceu para mais.<br>
-              E talvez... você esteja certo.
-            </p>
-            <a href="https://forms.gle/KdK1FEVhiHXniZpP7" target="_blank">
-              <img src="{{ url_for('static', filename='img/DESBLOQUEAR O CÓDIGO.png') }}" alt="Desbloquear" class="cta-btn" />
-            </a>
-          </div>
-          
-      </div>
-      <p>
-        Homens comuns buscam atalhos.<br>
-        Você está aqui porque sente que nasceu para mais.<br>
-        E talvez... você esteja certo.
-      </p>
-      <a href="https://forms.gle/KdK1FEVhiHXniZpP7" target="_blank">
-        <img src="DESBLOQUEAR O CÓDIGO.png" alt="Desbloquear" class="cta-btn" />
-      </a>
-    </div>
-
-      <footer class="footer">
-        <div class="footer-logo">
-          <img src="{{ url_for('static', filename='img/Branco-11.png') }}" alt="Logo Amanteus" class="footer-logo" />
+  
+      <div class="bottom-columns">
+        <div class="left-column">
+          <a href="https://x.com/amanteusbr" target="_blank">
+            <img src="static/img/X.png" alt="Twitter Amanteus" class="icon-x" />
+          </a>
+          <a href="https://www.instagram.com/amanteusbr/" target="_blank">
+            <img src="static/img/INSTA.png" alt="Instagram Amanteus" class="icon-insta" />
+          </a>
         </div>
-        <p>© 2025 Amanteus. Todos os direitos reservados.</p>
-      </footer>
-    <footer class="footer">
-      <div class="footer-logo">
-        <img src="Branco-11.png" alt="Logo Amanteus" class="footer-logo" />
+  
+        <div class="right-column">
+          <a href="https://forms.gle/KdK1FEVhiHXniZpP7" target="_blank" rel="noopener noreferrer">
+            <img src="static/img/PRIMORDIAL.png" alt="Acesso Primordial" class="primordial-image" />
+          </a>
+        </div>
       </div>
-      <p>© 2025 Amanteus. Todos os direitos reservados.</p>
-    </footer>
-
+  
+    </div>
   </section>
+  
+  <!-- Seção CTA -->
+<section class="cta-section">
+  <div class="cta-content">
+    <p class="cta-text">
+      Homens comuns buscam atalhos.<br />
+      Você está aqui porque sente que nasceu para mais.<br />
+      E talvez... você esteja certo.
+    </p>
+    <a href="https://forms.gle/KdK1FEVhiHXniZpP7" target="_blank" rel="noopener noreferrer">
+      <img src="static/img/DESBLOQUEAR O CÓDIGO.png" alt="Desbloquear o Código" class="cta-button pulse" />
+    </a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer-section">
+  <img src="static/img/Branco-11.png" alt="Logo Footer" class="footer-logo" />
+  <p class="footer-text">© 2025 Amanteus. Todos os direitos reservados.</p>
+</footer>
+
+
 </body>
+</html>
