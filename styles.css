@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Houstiq';
-  src: url('../fonts/Houstiq.otf') format('opentype');
+  src: url('/Houstiq.otf') format('opentype');
 }
 
 body {
