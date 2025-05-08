@@ -1,0 +1,360 @@
+@font-face {
+  font-family: 'Houstiq';
+  src: url('../fonts/Houstiq.otf') format('opentype');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Houstiq', sans-serif;
+  background-color: #000;
+  color: #e0e0e0;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.background-layer {
+  background-image: url('../img/back 1.png');
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 120px;
+  z-index: 2;
+}
+
+.headline {
+  font-size: 2.5rem;
+  z-index: 2;
+  color: #e0e0e0;
+  margin-top: 30px;
+}
+
+.headline .highlight {
+  color: #c4aa83;
+}
+
+.headline-bottom {
+  font-size: 3.8rem;
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.scroll-bar-container {
+  width: 100%;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.scroll-bar {
+  display: flex;
+  animation: scroll 10s linear infinite;
+}
+
+.scroll-bar img {
+  height: 50px;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+
+.background-extend {
+  background-image: url('../img/back 2.png');
+  background-size: cover;
+  background-position: top;
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.secreta a {
+  z-index: 2;
+}
+
+.pulse {
+  width: 90%;
+  max-width: 600px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.03); opacity: 0.9; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@media (max-width: 768px) {
+  .headline {
+    font-size: 1.8rem;
+    margin-top: 80px;
+  }
+
+  .logo {
+    width: 90px;
+  }
+
+  .pulse {
+    width: 100%;
+  }
+}
+
+.icon-x {
+  margin-top: 0px;
+  width: 200px;
+}
+
+.icon-insta {
+  margin-top: 10px;
+  width: 200px;
+}
+
+.section-container {
+  padding-left: 20px;
+}
+
+.central-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+  background-image: url('../img/back 2.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.central-content {
+  display: flex;
+  flex-direction: row; /* Mudar de row (lateral) para coluna (em cima e embaixo) */
+  gap: 40px;  /* Espaçamento entre as seções */
+  max-width: 1200px;
+  width: 100%;
+  align-items: center; /* Centraliza o conteúdo */
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinha o conteúdo do lado esquerdo ao centro */
+  margin-left: 20px;
+}
+
+.secret-image {
+  margin-bottom: 20px;
+  animation: pulse 2s infinite;
+}
+
+.icon-x {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.icon-insta {
+  margin-top: 5px;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-right: 20px; /* Espaçamento da esquerda */
+  align-items: flex-end; /* Alinha as imagens ao centro */
+}
+
+.primordial-image {
+  max-width: 220px;
+  height: auto;
+  margin-top: 0px;
+  transition: transform 0.3s ease;
+}
+
+.primordial-image:hover {
+  transform: scale(1.05);
+}
+
+.central-content {
+  display: flex;
+  flex-direction: column; /* Agora em coluna */
+  align-items: center;
+  gap: 40px;
+}
+
+.top-secret {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.bottom-columns {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 800px;
+}
+
+.left-column,
+.right-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.left-column {
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.right-column {
+  align-items: flex-end;
+}
+
+.top-secret {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0; /* zera a margem da imagem Sala Secreta */
+}
+
+.secret-image {
+  margin: 0; /* remove margem inferior */
+}
+
+.bottom-columns {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 800px;
+  gap: 10px; /* fixa a distância entre colunas */
+}
+
+.left-column,
+.right-column {
+  flex: 1; /* garante que as colunas ocupem espaço equilibrado */
+}
+
+.central-wrapper {
+  max-width: 600px; /* MESMO valor da imagem Sala Secreta */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-secret {
+  width: 100%;
+  margin: 0;
+}
+
+.secret-image {
+  margin: 0;
+  width: 100%;
+  max-width: 600px; /* garante o controle central */
+}
+
+.bottom-columns {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 10px;
+}
+
+.left-column,
+.right-column {
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 5px); /* divide igualmente com gap de 10px */
+}
+
+.icon-x {
+  margin-top: 0px;
+  margin-bottom: 8px; /* Espaço entre X e Insta */
+  width: 200px;
+}
+
+.icon-insta {
+  margin-top: 0px; /* Remove qualquer espaçamento superior */
+  margin-bottom: 0px;
+  width: 200px;
+}
+
+.cta-section {
+  background-image: url('../img/back 2.png');
+  background-size: cover;
+  background-position: center;
+  padding: 80px 20px 60px;
+  text-align: center;
+}
+
+.cta-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cta-text {
+  font-size: 15px;
+  color: #e0e0e0;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.cta-button {
+  max-width: 300px;
+  width: 90%;
+  height: auto;
+  animation: pulse 2s infinite;
+}
+
+/* Reutiliza o @keyframes pulse já existente */
+
+.footer-section {
+  background-image: url('../img/back 2.png');
+  background-size: cover;
+  background-position: center;
+  padding: 40px 20px;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.footer-logo {
+  max-width: 120px;
+  width: 90%;
+  margin-bottom: 0px;
+}
+
+.footer-text {
+  font-size: 1rem;
+  color: #ccc;
+}
