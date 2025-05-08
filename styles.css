@@ -295,7 +295,7 @@ body {
 .right-column {
   display: flex;
   flex-direction: column;
-  width: calc(50% - 5px); /* divide igualmente com gap de 10px */
+  width: calc(50% - 0px); /* divide igualmente com gap de 10px */
 }
 
 .icon-x {
